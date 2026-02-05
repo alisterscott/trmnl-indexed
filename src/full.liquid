@@ -1,11 +1,17 @@
+{% if trmnl.plugin_settings.custom_fields_values.randomise == "yes" %}
+  {% assign random_seed = "now" | date: "%s" %}
+  {% assign random_index = random_seed | modulo: rss.channel.item.size %}
+  {% assign selected_item = rss.channel.item[random_index] %}
+{% else %}
+  {% assign selected_item = rss.channel.item[0] %}
+{% endif %}
+
 <div class="layout">
-  
-       {{ rss.channel.item[0].encoded }}
-  
+  {{ selected_item.encoded }}
 </div>
 
 <div class="title_bar">
   <img class="image" src="https://trmnl.com/images/plugins/trmnl--render.svg">
-  <span class="title">Indexed Blog thisisindexed.com</span>
+  <span class="title">{{ "Indexed Blog thisisindexed.com" }}</span>
   <span class="instance">by Jessica Hagy</span>
 </div>
