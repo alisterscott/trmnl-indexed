@@ -1,13 +1,7 @@
-{% if trmnl.plugin_settings.custom_fields_values.randomise == "yes" %}
-  {% assign random_seed = "now" | date: "%s" %}
-  {% assign random_index = random_seed | modulo: rss.channel.item.size %}
-  {% assign selected_item = rss.channel.item[random_index] %}
-{% else %}
-  {% assign selected_item = rss.channel.item[0] %}
-{% endif %}
-
-<div class="layout">
-  {{ selected_item.encoded }}
+<div class="view bg-white">
+  <div class="image-container">
+    {{ img_tag }}
+  </div>
 </div>
 
 <div class="title_bar">
