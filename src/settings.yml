@@ -1,0 +1,27 @@
+---
+strategy: polling
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: ''
+polling_verb: get
+polling_url: https://thisisindexed.com/feed/
+polling_headers: ''
+polling_body: ''
+id: 238677
+name: Indexed Blog
+refresh_interval: 15
+custom_fields:
+- keyname: randomise
+  field_type: select
+  name: Randomise Posts?
+  description: Latest post will be displayed unless you wish to show a random post from the feed each time.
+  options:
+  - "Yes"
+  - "No"
+  default: "no" # unless wrapped in quotes, value will be true
+- keyname: about
+  name: Plugin by Alister Scott
+  field_type: author_bio
+  category: productivity,life
+  description: Ed
+  github_url: https://github.com/alisterscott/trmnl-indexed
