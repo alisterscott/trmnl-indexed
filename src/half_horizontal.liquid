@@ -1,19 +1,7 @@
-<style>
-  .image-container {
-    padding: 0 20px !important;
-  }
-  
-  .image-container img {
-    width: auto !important;
-    height: 100% !important;
-    object-fit: contain !important;
-  }
-</style>
+{% assign img_tag_half_horizontal = img_tag | replace: 'w--full h--full', 'w--auto h--full' %}
 
-<div class="view bg-white">
-  <div class="image-container">
-    {{ img_tag }}
-  </div>
+<div class="layout layout--col layout--center bg--white px--large">
+  {{ img_tag_half_horizontal }}
 </div>
 
 <div class="title_bar">

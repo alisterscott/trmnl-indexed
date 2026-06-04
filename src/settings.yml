@@ -21,7 +21,7 @@ custom_fields:
   name: Plugin by Alister Scott
   field_type: author_bio
   category: productivity,life
-  description: Ed
+  description: Shows the latest or random post from the Indexed Blog.
   github_url: https://github.com/alisterscott/trmnl-indexed
 name: Indexed Blog
 refresh_interval: 15

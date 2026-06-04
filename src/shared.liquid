@@ -7,34 +7,4 @@
 {% endif %}
 {% assign img_start = selected_item.encoded | split: '<img' | first %}
 {% assign img_content = selected_item.encoded | split: '<img' | last | split: '>' | first %}
-{% assign img_tag = '<img class="image image-dither"' | append: img_content | append: '>' %}
-
-
-<style>
-  .view {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .image-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    overflow: hidden;
-    min-height: 0; /* Important for flex children */
-  }
-
-  .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-  }
-
-</style>
+{% assign img_tag = '<img class="image image-dither image--contain w--full h--full"' | append: img_content | append: '>' %}
