@@ -8,6 +8,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
 
   workers: 1,
+  retries: process.env.CI ? 2 : 0,
   reporter: "html",
   use: {
     baseURL: "http://localhost:4567",
