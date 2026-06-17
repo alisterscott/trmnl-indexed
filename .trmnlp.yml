@@ -9,4 +9,4 @@ time_zone: Australia/Brisbane
 
 # values of custom fields (defined in src/settings.yml)
 custom_fields:
-  randomise: 'yes'
+  randomise: "yes"

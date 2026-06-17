@@ -1,0 +1,24 @@
+{
+  "name": "trmnl-indexed",
+  "version": "1.0.0",
+  "description": "A TRMNL plugin for Indexed Blog with Playwright Tests",
+  "homepage": "https://github.com/alisterscott/trmnl-indexed#readme",
+  "bugs": {
+    "url": "https://github.com/alisterscott/trmnl-indexed/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alisterscott/trmnl-indexed.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^25.9.3"
+  }
+}
